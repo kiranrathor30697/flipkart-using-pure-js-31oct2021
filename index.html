@@ -34,21 +34,23 @@
 
         var n = document.createElement('nav');
         n.setAttribute('class','k_nav');
-        console.log(n);
+        //console.log(n);
 
         ht.append(n);
-        console.log(n);
+        //console.log(n);
 
         var ul = document.createElement('ul');
-        console.log(ul);
+        //console.log(ul);
 
-        count = 4;
+         count = 5;
         
         for (let index = 0; index < count; index++) {
             //console.log(index);
             var li = document.createElement('li');
-            //console.log(li);
+            
             ul.append(li);
+            //console.log(li);
+            
             ul.style.listStyle = 'none';
             li.style.display = 'inline-block';
             var a = document.createElement('a');
@@ -56,11 +58,11 @@
             li.append(a);
             a.textContent = index;
         }
+        //concole.log(document.querySelector('header .headerTop nav li:nth(2) a'));
 
 
         n.append(ul);
 
-        n.append
         var hb = document.createElement('div');
         hb.setAttribute('class','headerBottom');
         //console.log(hb);
