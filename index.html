@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart using PURE JAVASCRIPT</title>
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    
+    <script>
+         document.body.style.margin = "0px";
+
+        var h = document.createElement('header');
+        //console.log(h);
+
+        h.setAttribute('class','k_header');
+        console.log(h);
+
+        document.body.append(h);
+
+        var ht = document.createElement('div');
+        ht.setAttribute('class','headerTop')
+        //console.log(ht);
+
+        h.appendChild(ht);
+
+        var n = document.createElement('nav');
+        n.setAttribute('class','k_nav');
+        console.log(n);
+
+        ht.append(n);
+        console.log(n);
+
+        var ul = document.createElement('ul');
+        console.log(ul);
+
+        count = 4;
+        
+        for (let index = 0; index < count; index++) {
+            //console.log(index);
+            var li = document.createElement('li');
+            //console.log(li);
+            ul.append(li);
+            ul.style.listStyle = 'none';
+            li.style.display = 'inline-block';
+            var a = document.createElement('a');
+            //console.log(a);
+            li.append(a);
+            a.textContent = index;
+        }
+
+
+        n.append(ul);
+
+        n.append
+        var hb = document.createElement('div');
+        hb.setAttribute('class','headerBottom');
+        //console.log(hb);
+
+        h.appendChild(hb);
+
+        var x = document.querySelector('header');
+        x.style.margin = "auto";
+
+        var xt = document.querySelector('.headerTop');
+        console.log(xt);
+        xt.style.backgroundColor = "#2874F0";
+        xt.style.height = "56px";
+
+        var xb = document.querySelector('.headerBottom');
+        console.log(xb);
+        xb.style.backgroundColor ='#FFF';
+        xb.style.border ='1px dashed green';
+        xb.style.height ='109px';
+
+        var f = document.createElement('footer');
+        //console.log(f);
+
+        var m = document.createElement('div');
+        m.setAttribute('class','k_box')
+        console.log(m);
+
+        m.style.height = '7870px';
+        m.style.backgroundColor = '#f1f3f6';
+        m.style.border = '1px dashed purple';
+
+        var m1 = document.querySelector('.k_box');
+
+        document.body.append(m);
+
+        var m2 = document.createElement('form');
+        m2.setAttribute('class','myForm');
+        console.log(m2);
+
+
+
+        f.setAttribute('class','k_footer');
+        console.log(f);
+
+        var ft = document.createElement('div');
+        ft.setAttribute('class','footerTop');
+        //console.log(ft);
+
+        f.appendChild(ft);
+
+        var fb = document.createElement('div');
+        fb.setAttribute('class','footerBottom');
+        //console.log(fb);
+
+        f.append(fb);
+
+        document.body.appendChild(f);
+        
+       /*  var y = document.querySelector('footer');
+        console.log(y);
+
+        y.style.backgroundColor = 'yellow';
+        y.style.height = '1850px'; */
+
+        var yt = document.querySelector('.footerTop');
+        console.log(yt);
+
+        yt.style.backgroundColor = "#fff";
+        yt.style.border = "1px dashed green";
+        yt.style.height = '1020px';
+
+        var yb = document.querySelector('.footerBottom');
+        console.log(yb);
+
+        yb.style.backgroundColor = "#172337";
+        yb.style.border = "1px dashed yellow";
+        yb.style.height = '340px';
+
+       
+    </script>
+</body>
+</html>
